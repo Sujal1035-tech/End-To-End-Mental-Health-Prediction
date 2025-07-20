@@ -1,0 +1,82 @@
+[2025-07-20 16:36:55,399: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-20 16:36:55,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-20 20:45:16,095: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 20:45:16,098: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 20:45:16,099: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 20:45:16,099: INFO: common: created directory at: artifacts]
+[2025-07-20 20:45:16,099: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-20 20:45:18,006: INFO: 3307092374: artifacts/data_ingestion/survey.zip downloaded! Info: 
+Connection: close
+Content-Length: 47226
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f16fe3c88c22772a1f26f1fe8eb01d80693f7c860caa7ff40583a008e275e0e8"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5E88:9FF7:28E209:670D7B:687D0804
+Accept-Ranges: bytes
+Date: Sun, 20 Jul 2025 15:15:18 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4740-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1753024518.863782,VS0,VE362
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0ca61100bdd8851483fa3ab1f8244c4a840ae87c
+Expires: Sun, 20 Jul 2025 15:20:18 GMT
+Source-Age: 0
+
+]
+[2025-07-20 20:45:18,012: INFO: 3307092374: Extracted zip file to: artifacts/data_ingestion/unzipped_data]
+[2025-07-20 20:54:59,488: INFO: main: >>>>>> stage Data_Ingestion_stage start<<<<<<]
+[2025-07-20 20:54:59,488: ERROR: main: 'module' object is not callable]
+Traceback (most recent call last):
+  File "D:\end to end mental_health_prediction\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\end to end mental_health_prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "d:\end to end mental_health_prediction\src\mlProject\config\configuration.py", line 15, in __init__
+    config_filepath = Path(config_filepath)
+TypeError: 'module' object is not callable
+[2025-07-20 20:57:43,579: INFO: main: >>>>>> stage Data_Ingestion_stage start<<<<<<]
+[2025-07-20 20:57:43,579: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 20:57:43,579: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 20:57:43,579: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 20:57:43,579: INFO: common: created directory at: artifacts]
+[2025-07-20 20:57:43,579: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-20 20:57:45,796: INFO: data_ingestion: artifacts/data_ingestion/survey.zip downloaded! Info: 
+Connection: close
+Content-Length: 47226
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f16fe3c88c22772a1f26f1fe8eb01d80693f7c860caa7ff40583a008e275e0e8"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5E88:9FF7:28E209:670D7B:687D0804
+Accept-Ranges: bytes
+Date: Sun, 20 Jul 2025 15:27:45 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4736-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1753025266.669573,VS0,VE202
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 7d64065412b6009612719865dd2a1baf749ec50b
+Expires: Sun, 20 Jul 2025 15:32:45 GMT
+Source-Age: 0
+
+]
+[2025-07-20 20:57:45,796: INFO: data_ingestion: Extracted zip file to: artifacts/data_ingestion/unzipped_data]
+[2025-07-20 20:57:45,796: INFO: main: >>>>>> stage Data_Ingestion_stage completed >>>>>>>
+
+x=========x]
