@@ -1,7 +1,7 @@
 # mlProject/config/configuration.py
 from mlProject.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH, SCHEMA_FILE_PATH
 from mlProject.utils.common import read_yaml, create_directories
-from mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig
+from mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
 from pathlib import Path  # ✅ Correct import
 
 
@@ -22,6 +22,8 @@ class ConfigurationManager:
         self.schema = read_yaml(schema_filepath)
 
         create_directories([self.config.artifacts_root])
+
+        
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
         create_directories([config.root_dir])
@@ -47,3 +49,19 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+    
+    def get_data_transformation_config(self):
+        config = self.config.data_transformation
+        schema = self.schema
+
+        return DataTransformationConfig(
+            root_dir=Path(config.root_dir),
+            data_path=Path(config.data_path),
+            drop_columns=schema.get("drop_columns", []),
+            columns_to_fillna=schema.get("columns_to_fillna", {}),
+            columns_to_drop_due_to_missing=schema.get("columns_to_drop_due_to_missing", []),
+            top_features=self.params.data_transformation.top_features,
+            scaler_path=Path(config.scaler_path),
+            processed_train_data_path=Path(config.processed_train_data_path),
+            processed_test_data_path=Path(config.processed_test_data_path)
+        )

@@ -142,3 +142,129 @@ x=========x]
 [2025-07-20 21:10:57,507: INFO: main: >>>>>> stage Data_Validation_Stage completed >>>>>>>
 
 x=========x]
+[2025-07-20 21:14:36,082: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 21:14:36,082: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 21:14:36,089: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 21:14:36,092: INFO: common: created directory at: artifacts]
+[2025-07-20 21:14:36,092: INFO: 511715814: 📄 Loading data from: artifacts\data_ingestion\unzipped_data\survey.csv]
+[2025-07-20 21:14:36,103: INFO: 511715814: 🧹 Dropping unnecessary columns]
+[2025-07-20 21:14:36,104: INFO: 511715814: 🩹 Filling missing values]
+[2025-07-20 21:14:36,118: INFO: 511715814: 🔢 Cleaning Age column]
+[2025-07-20 21:14:36,118: INFO: 511715814: 🚻 Normalizing Gender column]
+[2025-07-20 21:14:36,123: INFO: 511715814: 🌍 Reducing countries to top 4]
+[2025-07-20 21:14:36,126: INFO: 511715814: 🏷️ Encoding categorical columns]
+[2025-07-20 21:14:36,143: INFO: 511715814: ✨ Selecting top features]
+[2025-07-20 21:14:36,145: INFO: 511715814: 📏 Scaling features]
+[2025-07-20 21:14:36,152: INFO: 511715814: ✂️ Splitting data and saving]
+[2025-07-20 21:23:14,333: INFO: main: >>>>>> stage Data_Ingestion_stage start<<<<<<]
+[2025-07-20 21:23:14,333: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 21:23:14,333: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 21:23:14,347: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 21:23:14,347: INFO: common: created directory at: artifacts]
+[2025-07-20 21:23:14,348: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-20 21:23:15,880: INFO: data_ingestion: artifacts/data_ingestion/survey.zip downloaded! Info: 
+Connection: close
+Content-Length: 47226
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f16fe3c88c22772a1f26f1fe8eb01d80693f7c860caa7ff40583a008e275e0e8"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5E88:9FF7:28E209:670D7B:687D0804
+Accept-Ranges: bytes
+Date: Sun, 20 Jul 2025 15:53:16 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4723-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1753026796.844223,VS0,VE211
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c389341ea096b489f3b45b5dad06571b8f07e3fe
+Expires: Sun, 20 Jul 2025 15:58:16 GMT
+Source-Age: 0
+
+]
+[2025-07-20 21:23:15,897: INFO: data_ingestion: Extracted zip file to: artifacts/data_ingestion/unzipped_data]
+[2025-07-20 21:23:15,897: INFO: main: >>>>>> stage Data_Ingestion_stage completed >>>>>>>
+
+x=========x]
+[2025-07-20 21:23:15,897: INFO: main: >>>>>> stage Data_Validation_Stage start<<<<<<]
+[2025-07-20 21:23:15,902: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 21:23:15,904: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 21:23:15,909: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 21:23:15,909: INFO: common: created directory at: artifacts]
+[2025-07-20 21:23:15,909: INFO: common: created directory at: artifacts/data_validation]
+[2025-07-20 21:23:15,909: INFO: data_validation:  Reading data from: artifacts/data_ingestion/unzipped_data\survey.csv]
+[2025-07-20 21:23:15,916: INFO: data_validation: Validation completed. Status: True]
+[2025-07-20 21:23:15,916: INFO: main: >>>>>> stage Data_Validation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-20 21:23:15,916: INFO: main: >>>>>> stage Data_Transformation_Stage start<<<<<<]
+[2025-07-20 21:23:15,923: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 21:23:15,923: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 21:23:15,923: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 21:23:15,923: INFO: common: created directory at: artifacts]
+[2025-07-20 21:23:16,027: INFO: main: >>>>>> stage Data_Transformation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-20 21:24:02,297: INFO: main: >>>>>> stage Data_Ingestion_stage start<<<<<<]
+[2025-07-20 21:24:02,297: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 21:24:02,297: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 21:24:02,297: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 21:24:02,297: INFO: common: created directory at: artifacts]
+[2025-07-20 21:24:02,308: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-20 21:24:03,148: INFO: data_ingestion: artifacts/data_ingestion/survey.zip downloaded! Info: 
+Connection: close
+Content-Length: 47226
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f16fe3c88c22772a1f26f1fe8eb01d80693f7c860caa7ff40583a008e275e0e8"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5E88:9FF7:28E209:670D7B:687D0804
+Accept-Ranges: bytes
+Date: Sun, 20 Jul 2025 15:54:03 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom4741-BOM
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1753026843.444025,VS0,VE1
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5fed5b7d793015311e0a01897a4a803a3f60b99b
+Expires: Sun, 20 Jul 2025 15:59:03 GMT
+Source-Age: 47
+
+]
+[2025-07-20 21:24:03,161: INFO: data_ingestion: Extracted zip file to: artifacts/data_ingestion/unzipped_data]
+[2025-07-20 21:24:03,161: INFO: main: >>>>>> stage Data_Ingestion_stage completed >>>>>>>
+
+x=========x]
+[2025-07-20 21:24:03,172: INFO: main: >>>>>> stage Data_Validation_Stage start<<<<<<]
+[2025-07-20 21:24:03,174: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 21:24:03,176: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 21:24:03,178: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 21:24:03,178: INFO: common: created directory at: artifacts]
+[2025-07-20 21:24:03,181: INFO: common: created directory at: artifacts/data_validation]
+[2025-07-20 21:24:03,182: INFO: data_validation:  Reading data from: artifacts/data_ingestion/unzipped_data\survey.csv]
+[2025-07-20 21:24:03,190: INFO: data_validation: Validation completed. Status: True]
+[2025-07-20 21:24:03,190: INFO: main: >>>>>> stage Data_Validation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-20 21:24:03,190: INFO: main: >>>>>> stage Data_Transformation_Stage start<<<<<<]
+[2025-07-20 21:24:03,190: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-20 21:24:03,190: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-20 21:24:03,195: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-20 21:24:03,195: INFO: common: created directory at: artifacts]
+[2025-07-20 21:24:03,292: INFO: main: >>>>>> stage Data_Transformation_Stage completed >>>>>>>
+
+x=========x]

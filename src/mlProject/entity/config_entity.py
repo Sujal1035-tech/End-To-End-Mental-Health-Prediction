@@ -1,6 +1,7 @@
 # mlProject/entity/config_entity.py
 from dataclasses import dataclass
 from pathlib import Path
+from typing import List, Dict
 
 @dataclass(frozen=True)
 class DataIngestionConfig:
@@ -15,3 +16,16 @@ class DataValidationConfig:
     STATUS_FILE: str
     unzip_data_dir: Path
     all_schema: dict
+
+
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    drop_columns: List[str]
+    columns_to_fillna: Dict[str, str]
+    columns_to_drop_due_to_missing: List[str]
+    top_features: int
+    scaler_path: Path
+    processed_train_data_path: Path
+    processed_test_data_path: Path
