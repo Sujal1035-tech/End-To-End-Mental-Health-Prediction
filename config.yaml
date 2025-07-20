@@ -5,3 +5,8 @@ data_ingestion:
   source_URL: https://github.com/Sujal1035-tech/End-to-End-Student-Marks-Prediction/raw/main/survey.zip
   local_data_file: artifacts/data_ingestion/survey.zip
   unzip_dir: artifacts/data_ingestion/unzipped_data
+
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/unzipped_data
+  STATUS_FILE: artifacts/data_validation/status.txt

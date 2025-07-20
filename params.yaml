@@ -1,1 +1,2 @@
-key: val
+data_transformation:
+  top_features: 20

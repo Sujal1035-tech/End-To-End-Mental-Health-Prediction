@@ -1,1 +1,46 @@
-key: val
+columns:
+  Timestamp: object
+  Age: int64
+  Gender: object
+  Country: object
+  state: object
+  self_employed: object
+  family_history: object
+  treatment: object
+  work_interfere: object
+  no_employees: object
+  remote_work: object
+  tech_company: object
+  benefits: object
+  care_options: object
+  wellness_program: object
+  seek_help: object
+  anonymity: object
+  leave: object
+  mental_health_consequence: object
+  phys_health_consequence: object
+  coworkers: object
+  supervisor: object
+  mental_health_interview: object
+  phys_health_interview: object
+  mental_vs_physical: object
+  obs_consequence: object
+  comments: object
+
+target_column: treatment
+
+numerical_columns:
+  - Age
+
+drop_columns:
+  - Timestamp
+  - comments
+
+columns_to_fillna:
+  self_employed: No
+  work_interfere: Do Not Know
+
+columns_to_drop_due_to_missing:
+  - state
+
+
