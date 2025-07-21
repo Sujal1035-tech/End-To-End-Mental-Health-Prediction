@@ -38,3 +38,11 @@ class ModelTrainerConfig:
     scaler_path: Path
     model_dir: Path
     models: Dict[str, Dict[str, Any]]
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    scaler_path: Path 
+    test_data_path: Path
+    model_path: Path
+    metric_file_name: Path

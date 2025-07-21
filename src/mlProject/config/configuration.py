@@ -1,7 +1,7 @@
 # mlProject/config/configuration.py
 from mlProject.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH, SCHEMA_FILE_PATH
 from mlProject.utils.common import read_yaml, create_directories
-from mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig
+from mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig,ModelEvaluationConfig
 from pathlib import Path  # ✅ Correct import
 
 
@@ -79,3 +79,15 @@ class ConfigurationManager:
             model_dir=config.model_dir,
             models=model_configs
         )
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+
+        create_directories([config["root_dir"]])
+
+        return ModelEvaluationConfig(
+    root_dir=Path(config["root_dir"]),
+        test_data_path=Path(config["test_data_path"]),
+        model_path=Path(config["model_path"]),
+        metric_file_name=Path(config["metric_file_name"]),
+        scaler_path=Path(self.config.model_trainer["scaler_path"])  # ✅ reuse from training config
+    )

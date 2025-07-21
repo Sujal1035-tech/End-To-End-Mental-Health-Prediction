@@ -1,26 +1,32 @@
-artifacts_root: artifacts
+  artifacts_root: artifacts
 
-data_ingestion:
-  root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/Sujal1035-tech/End-to-End-Student-Marks-Prediction/raw/main/survey.zip
-  local_data_file: artifacts/data_ingestion/survey.zip
-  unzip_dir: artifacts/data_ingestion/unzipped_data
+  data_ingestion:
+    root_dir: artifacts/data_ingestion
+    source_URL: https://github.com/Sujal1035-tech/End-to-End-Student-Marks-Prediction/raw/main/survey.zip
+    local_data_file: artifacts/data_ingestion/survey.zip
+    unzip_dir: artifacts/data_ingestion/unzipped_data
 
-data_validation:
-  root_dir: artifacts/data_validation
-  unzip_data_dir: artifacts/data_ingestion/unzipped_data
-  STATUS_FILE: artifacts/data_validation/status.txt
+  data_validation:
+    root_dir: artifacts/data_validation
+    unzip_data_dir: artifacts/data_ingestion/unzipped_data
+    STATUS_FILE: artifacts/data_validation/status.txt
 
-data_transformation:
-  root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/unzipped_data/survey.csv
-  scaler_path: artifacts/data_transformation/scaler.pkl
-  processed_train_data_path: artifacts/data_transformation/train.csv
-  processed_test_data_path: artifacts/data_transformation/test.csv
+  data_transformation:
+    root_dir: artifacts/data_transformation
+    data_path: artifacts/data_ingestion/unzipped_data/survey.csv
+    scaler_path: artifacts/data_transformation/scaler.pkl
+    processed_train_data_path: artifacts/data_transformation/train.csv
+    processed_test_data_path: artifacts/data_transformation/test.csv
 
-model_trainer:
-  root_dir: artifacts/model_trainer
-  train_data_path: artifacts/data_transformation/train.csv
-  test_data_path: artifacts/data_transformation/test.csv
-  model_dir: artifacts/model_trainer/model.pkl
-  scaler_path: artifacts/data_transformation/scaler.pkl
+  model_trainer:
+    root_dir: artifacts/model_trainer
+    train_data_path: artifacts/data_transformation/train.csv
+    test_data_path: artifacts/data_transformation/test.csv
+    model_dir: artifacts/model_trainer/model.pkl
+    scaler_path: artifacts/data_transformation/scaler.pkl
+
+  model_evaluation:
+    root_dir: artifacts/model_evaluation
+    test_data_path: artifacts/data_transformation/test.csv
+    model_path: artifacts/model_trainer/model.pkl
+    metric_file_name: artifacts/model_evaluation/metrics.json
