@@ -1,7 +1,7 @@
 # mlProject/entity/config_entity.py
 from dataclasses import dataclass
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict,Any
 
 @dataclass(frozen=True)
 class DataIngestionConfig:
@@ -29,3 +29,12 @@ class DataTransformationConfig:
     scaler_path: Path
     processed_train_data_path: Path
     processed_test_data_path: Path
+
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    train_data_path: Path
+    test_data_path: Path
+    scaler_path: Path
+    model_dir: Path
+    models: Dict[str, Dict[str, Any]]

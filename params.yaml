@@ -1,2 +1,95 @@
 data_transformation:
   top_features: 20
+
+model_trainer:
+  test_size: 0.2
+  random_state: 42
+  models:
+    logistic_regression:
+      module: sklearn.linear_model
+      class: LogisticRegression
+      params:
+        max_iter: 2000
+        class_weight: balanced
+        solver: saga
+        penalty: l2
+        C: 1.0
+
+    knn:
+      module: sklearn.neighbors
+      class: KNeighborsClassifier
+      params:
+        n_neighbors: 7
+        weights: distance
+        metric: 'minkowski'
+        p: 2
+
+    decision_tree:
+      module: sklearn.tree
+      class: DecisionTreeClassifier
+      params:
+        criterion: entropy
+        max_depth: 10
+        min_samples_split: 5
+        class_weight: balanced
+        random_state: 42
+
+    random_forest:
+      module: sklearn.ensemble
+      class: RandomForestClassifier
+      params:
+        n_estimators: 150
+        max_depth: 12
+        min_samples_split: 5
+        class_weight: balanced
+        random_state: 42
+
+    svm:
+      module: sklearn.svm
+      class: SVC
+      params:
+        C: 1.0
+        kernel: rbf
+        gamma: scale
+        probability: true
+        class_weight: balanced
+        random_state: 42
+
+    naive_bayes:
+      module: sklearn.naive_bayes
+      class: GaussianNB
+      params: {}
+
+    xgboost:
+      module: xgboost
+      class: XGBClassifier
+      params:
+        use_label_encoder: false
+        eval_metric: logloss
+        n_estimators: 150
+        learning_rate: 0.1
+        max_depth: 6
+        subsample: 0.8
+        colsample_bytree: 0.8
+        random_state: 42
+
+    catboost:
+      module: catboost
+      class: CatBoostClassifier
+      params:
+        iterations: 300
+        learning_rate: 0.05
+        depth: 6
+        loss_function: Logloss
+        verbose: 0
+        random_state: 42
+
+    lightgbm:
+      module: lightgbm
+      class: LGBMClassifier
+      params:
+        n_estimators: 150
+        learning_rate: 0.1
+        max_depth: 6
+        subsample: 0.8
+        random_state: 42

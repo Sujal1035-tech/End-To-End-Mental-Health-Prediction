@@ -1,7 +1,7 @@
 # mlProject/config/configuration.py
 from mlProject.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH, SCHEMA_FILE_PATH
 from mlProject.utils.common import read_yaml, create_directories
-from mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
+from mlProject.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig
 from pathlib import Path  # ✅ Correct import
 
 
@@ -64,4 +64,18 @@ class ConfigurationManager:
             scaler_path=Path(config.scaler_path),
             processed_train_data_path=Path(config.processed_train_data_path),
             processed_test_data_path=Path(config.processed_test_data_path)
+        )
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        model_configs = self.params.model_trainer.models
+
+        create_directories([config.root_dir])
+
+        return ModelTrainerConfig(
+            root_dir=config.root_dir,
+            train_data_path=config.train_data_path,
+            test_data_path=config.test_data_path,
+            scaler_path=config.scaler_path,
+            model_dir=config.model_dir,
+            models=model_configs
         )
