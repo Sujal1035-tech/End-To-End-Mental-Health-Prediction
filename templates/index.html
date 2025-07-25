@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mental Health Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Mental Health Prediction Form</h1>
+    <form method="POST">
+
+      <label>Age:</label>
+      <input type="number" name="Age" min="18" max="80" required value="{{ form_data.get('Age', '') }}">
+
+      <label>Gender:</label>
+      <select name="Gender" required>
+        <option value="">--Select--</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+      </select>
+
+      <label>Self Employed:</label>
+      <select name="self_employed">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Family History:</label>
+      <select name="family_history">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Treatment:</label>
+      <select name="treatment">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Work Interfere:</label>
+      <select name="work_interfere">
+        <option value="">--Select--</option>
+        <option value="Never">Never</option>
+        <option value="Rarely">Rarely</option>
+        <option value="Sometimes">Sometimes</option>
+        <option value="Often">Often</option>
+        <option value="Do Not Know">Do Not Know</option>
+      </select>
+
+      <label>No. of Employees:</label>
+      <select name="no_employees">
+        <option value="">--Select--</option>
+        <option value="1-5">1-5</option>
+        <option value="6-25">6-25</option>
+        <option value="26-100">26-100</option>
+        <option value="100-500">100-500</option>
+        <option value="500-1000">500-1000</option>
+        <option value="More than 1000">More than 1000</option>
+      </select>
+
+      <label>Remote Work:</label>
+      <select name="remote_work">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Tech Company:</label>
+      <select name="tech_company">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Benefits:</label>
+      <select name="benefits">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Don't know">Don't know</option>
+      </select>
+
+      <label>Care Options:</label>
+      <select name="care_options">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not sure">Not sure</option>
+      </select>
+
+      <label>Wellness Program:</label>
+      <select name="wellness_program">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Don't know">Don't know</option>
+      </select>
+
+      <label>Seek Help:</label>
+      <select name="seek_help">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Don't know">Don't know</option>
+      </select>
+
+      <label>Anonymity:</label>
+      <select name="anonymity">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Don't know">Don't know</option>
+      </select>
+
+      <label>Leave:</label>
+      <select name="leave">
+        <option value="">--Select--</option>
+        <option value="Very easy">Very easy</option>
+        <option value="Somewhat easy">Somewhat easy</option>
+        <option value="Don't know">Don't know</option>
+        <option value="Somewhat difficult">Somewhat difficult</option>
+        <option value="Very difficult">Very difficult</option>
+      </select>
+
+      <label>Mental Health Consequence:</label>
+      <select name="mental_health_consequence">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+      </select>
+
+      <label>Physical Health Consequence:</label>
+      <select name="phys_health_consequence">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+      </select>
+
+      <label>Coworkers:</label>
+      <select name="coworkers">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Some of them">Some of them</option>
+      </select>
+
+      <label>Supervisor:</label>
+      <select name="supervisor">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Some of them">Some of them</option>
+      </select>
+
+      <label>Mental vs Physical:</label>
+      <select name="mental_vs_physical">
+        <option value="">--Select--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Don't know">Don't know</option>
+      </select>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+      <div class="result">
+        <h2>Prediction Result:</h2>
+        <p>{{ result }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>

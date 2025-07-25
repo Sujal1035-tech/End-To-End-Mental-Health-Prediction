@@ -1,0 +1,115 @@
+/* static/style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 15px;
+  background-attachment: fixed;
+}
+
+.container {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 35px 40px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+input,
+select {
+  margin-top: 6px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.2s ease;
+  color: #333;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 2px #a18cd1;
+  outline: none;
+}
+
+button {
+  margin-top: 30px;
+  padding: 14px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(118, 75, 162, 0.3);
+}
+
+.result {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 18px;
+  border-left: 5px solid #764ba2;
+  border-radius: 10px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  backdrop-filter: blur(5px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

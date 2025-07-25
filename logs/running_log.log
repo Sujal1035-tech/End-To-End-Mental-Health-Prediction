@@ -688,3 +688,333 @@ x=======x]
 [2025-07-21 19:12:58,994: INFO: main: >>>>>> stage Model_Evaluation_Stage completed >>>>>>>
 
 x======x]
+[2025-07-25 17:21:43,802: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-25 17:21:43,802: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 17:21:43,802: INFO: _internal:  * Restarting with stat]
+[2025-07-25 17:21:44,315: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 17:21:44,336: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 17:22:15,777: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:15] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:22:15,958: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:15] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 17:22:16,000: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-07-25 17:22:38,488: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 17:22:38,506: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:38] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -]
+[2025-07-25 17:22:38,516: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:38] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -]
+[2025-07-25 17:22:38,555: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:38] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=DgVx1MNeVOgS6xE3Vkix HTTP/1.1" 200 -]
+[2025-07-25 17:22:38,565: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:22:38] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -]
+[2025-07-25 17:48:57,793: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:48:57] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:48:57,803: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:48:57] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 17:50:25,453: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:25] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:50:25,468: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:25] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 17:50:28,036: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:28] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:50:28,054: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 17:50:28,641: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:28] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:50:28,654: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 17:50:29,075: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:29] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:50:29,095: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 17:50:29,317: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:29] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:50:29,328: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 17:50:29,498: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:29] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:50:29,510: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:50:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 17:52:06,696: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:52:06] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:52:06,714: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:52:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 17:53:14,034: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:53:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 17:53:14,052: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:53:14] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 17:53:14,052: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:53:14] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[2025-07-25 17:53:14,058: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:53:14] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png&s=DgVx1MNeVOgS6xE3Vkix HTTP/1.1[0m" 304 -]
+[2025-07-25 17:54:09,223: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 17:54:09,406: INFO: _internal:  * Restarting with stat]
+[2025-07-25 17:58:05,837: INFO: main: >>>>>> stage Data_Ingestion_stage start<<<<<<]
+[2025-07-25 17:58:05,837: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 17:58:05,854: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 17:58:05,859: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 17:58:05,861: INFO: common: created directory at: artifacts]
+[2025-07-25 17:58:05,861: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-25 17:58:07,618: INFO: data_ingestion: artifacts/data_ingestion/survey.zip downloaded! Info: 
+Connection: close
+Content-Length: 47226
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f16fe3c88c22772a1f26f1fe8eb01d80693f7c860caa7ff40583a008e275e0e8"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E4D8:36ACCC:E67C7:202DA5:68837856
+Accept-Ranges: bytes
+Date: Fri, 25 Jul 2025 12:28:08 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom-vanm7210088-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1753446488.233998,VS0,VE270
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 7e51648465329d9f2a43417f7bbadf4d58479703
+Expires: Fri, 25 Jul 2025 12:33:08 GMT
+Source-Age: 0
+
+]
+[2025-07-25 17:58:07,629: INFO: data_ingestion: Extracted zip file to: artifacts/data_ingestion/unzipped_data]
+[2025-07-25 17:58:07,629: INFO: main: >>>>>> stage Data_Ingestion_stage completed >>>>>>>
+
+x=========x]
+[2025-07-25 17:58:07,629: INFO: main: >>>>>> stage Data_Validation_Stage start<<<<<<]
+[2025-07-25 17:58:07,640: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 17:58:07,659: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 17:58:07,659: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 17:58:07,659: INFO: common: created directory at: artifacts]
+[2025-07-25 17:58:07,659: INFO: common: created directory at: artifacts/data_validation]
+[2025-07-25 17:58:07,666: INFO: data_validation:  Reading data from: artifacts/data_ingestion/unzipped_data\survey.csv]
+[2025-07-25 17:58:07,674: INFO: data_validation: Validation completed. Status: True]
+[2025-07-25 17:58:07,674: INFO: main: >>>>>> stage Data_Validation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-25 17:58:07,674: INFO: main: >>>>>> stage Data_Transformation_Stage start<<<<<<]
+[2025-07-25 17:58:07,674: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 17:58:07,687: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 17:58:07,691: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 17:58:07,694: INFO: common: created directory at: artifacts]
+[2025-07-25 17:58:07,797: INFO: main: >>>>>> stage Data_Transformation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-25 17:58:07,797: INFO: main: >>>>>> stage Model_Training_Stage start<<<<<<]
+[2025-07-25 17:58:07,803: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 17:58:07,811: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 17:58:07,811: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 17:58:07,811: INFO: common: created directory at: artifacts]
+[2025-07-25 17:58:07,811: INFO: common: created directory at: artifacts/model_trainer]
+[2025-07-25 17:58:14,189: INFO: main: >>>>>> stage Model_Training_Stage completed >>>>>>>
+
+x=======x]
+[2025-07-25 17:58:14,189: INFO: main: >>>>>> stage Model_Evaluation_Stage start<<<<<<]
+[2025-07-25 17:58:14,195: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 17:58:14,198: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 17:58:14,206: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 17:58:14,206: INFO: common: created directory at: artifacts]
+[2025-07-25 17:58:14,210: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-07-25 17:58:14,272: INFO: main: >>>>>> stage Model_Evaluation_Stage completed >>>>>>>
+
+x======x]
+[2025-07-25 17:59:52,620: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-25 17:59:52,620: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 17:59:52,636: INFO: _internal:  * Restarting with stat]
+[2025-07-25 17:59:53,179: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 17:59:53,179: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 17:59:57,359: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:59:57] "GET / HTTP/1.1" 200 -]
+[2025-07-25 17:59:57,517: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:59:57] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 17:59:57,630: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 17:59:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-07-25 18:00:18,766: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:00:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 18:00:18,780: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:00:18] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -]
+[2025-07-25 18:00:18,783: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:00:18] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -]
+[2025-07-25 18:00:18,816: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:00:18] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=2uj2jlFOlY4pbrwsFmnS HTTP/1.1" 200 -]
+[2025-07-25 18:00:18,838: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:00:18] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -]
+[2025-07-25 18:01:33,183: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 18:01:33,349: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:01:33,884: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:01:33,886: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:01:42,028: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 18:01:42,112: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:01:55,614: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-25 18:01:55,614: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 18:01:55,620: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:01:56,216: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:01:56,216: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:02:08,852: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:02:08] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:02:08,935: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:02:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:02:17,100: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:02:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 18:02:17,117: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:02:17] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:02:17,119: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:02:17] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[2025-07-25 18:02:17,149: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:02:17] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=ntn1biRongnvFeVqq2hb HTTP/1.1" 200 -]
+[2025-07-25 18:02:17,163: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:02:17] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -]
+[2025-07-25 18:03:16,729: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 18:03:16,919: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:03:17,531: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:03:17,531: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:03:23,541: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-25 18:03:23,541: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 18:03:23,541: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:03:24,074: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:03:24,074: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:03:27,706: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:27] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:03:27,832: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:03:27,869: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-07-25 18:03:34,857: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:34] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:03:34,871: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:03:47,930: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:47] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:03:47,951: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:03:54,245: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:54] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 18:03:54,260: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:54] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:03:54,260: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:54] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[2025-07-25 18:03:54,273: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:03:54] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=u8DicdBUZsdD884AVDYf HTTP/1.1" 200 -]
+[2025-07-25 18:06:41,418: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\src\\mlProject\\pipeline\\prediction.py', reloading]
+[2025-07-25 18:06:41,592: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:06:42,208: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:06:42,214: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:07:01,660: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 18:07:01,737: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:07:10,108: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-25 18:07:10,108: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 18:07:10,124: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:07:10,724: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:07:10,724: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:07:20,231: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:07:20] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:07:20,270: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:07:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:07:29,305: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:07:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 18:07:29,334: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:07:29] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:07:29,337: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:07:29] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[2025-07-25 18:07:29,351: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:07:29] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=6hDn4Ss3p30lEJZzuqkl HTTP/1.1" 200 -]
+[2025-07-25 18:10:34,800: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 18:10:34,973: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:10:35,632: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:10:35,633: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:10:49,954: INFO: _internal:  * Detected change in 'd:\\end to end mental_health_prediction\\src\\mlProject\\pipeline\\prediction.py', reloading]
+[2025-07-25 18:10:50,146: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:10:50,782: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:10:50,783: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:11:18,216: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-25 18:11:18,216: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 18:11:18,231: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:11:18,778: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:11:18,779: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:11:27,639: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:27] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2025-07-25 18:11:28,596: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:28] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2025-07-25 18:11:28,708: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:28] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -]
+[2025-07-25 18:11:28,708: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:28] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -]
+[2025-07-25 18:11:28,750: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:28] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=N5R84NcFOJp8NUDIEm3c HTTP/1.1" 200 -]
+[2025-07-25 18:11:28,763: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:28] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -]
+[2025-07-25 18:11:50,283: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 18:11:50,363: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:11:51,021: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:11:51,036: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:11:53,030: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:53] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:11:53,066: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:11:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:12:00,647: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:12:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 18:12:00,679: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:12:00] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:12:00,684: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:12:00] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[2025-07-25 18:12:00,695: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:12:00] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=BRA1IrkHf6ydEXYXVil3 HTTP/1.1" 200 -]
+[2025-07-25 18:16:51,174: INFO: _internal:  * Detected change in 'd:\\end to end mental_health_prediction\\src\\mlProject\\pipeline\\prediction.py', reloading]
+[2025-07-25 18:16:51,362: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:16:52,005: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:16:52,005: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:18:05,359: INFO: _internal:  * Detected change in 'D:\\end to end mental_health_prediction\\app.py', reloading]
+[2025-07-25 18:18:05,441: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:18:06,063: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:18:06,066: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:18:13,697: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 18:18:13,954: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:13] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[2025-07-25 18:18:13,982: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:13] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:18:14,018: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:14] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=6p00Ykp3nWPdCaQ1xYKk HTTP/1.1" 200 -]
+[2025-07-25 18:18:14,038: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:14] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -]
+[2025-07-25 18:18:18,662: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-25 18:18:18,682: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:18] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:18:18,686: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:18] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -]
+[2025-07-25 18:18:18,697: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:18] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png&s=6p00Ykp3nWPdCaQ1xYKk HTTP/1.1[0m" 304 -]
+[2025-07-25 18:18:18,710: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:18:18] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -]
+[2025-07-25 18:29:30,054: INFO: main: >>>>>> stage Data_Ingestion_stage start<<<<<<]
+[2025-07-25 18:29:30,054: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 18:29:30,054: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 18:29:30,071: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 18:29:30,072: INFO: common: created directory at: artifacts]
+[2025-07-25 18:29:30,072: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-25 18:29:31,541: INFO: data_ingestion: artifacts/data_ingestion/survey.zip downloaded! Info: 
+Connection: close
+Content-Length: 47226
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f16fe3c88c22772a1f26f1fe8eb01d80693f7c860caa7ff40583a008e275e0e8"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E4D8:36ACCC:E67C7:202DA5:68837856
+Accept-Ranges: bytes
+Date: Fri, 25 Jul 2025 12:59:32 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom-vanm7210031-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1753448372.192358,VS0,VE234
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 2dfdbb2bac0f08100f0d0ccf2f7c93b28133e5cd
+Expires: Fri, 25 Jul 2025 13:04:32 GMT
+Source-Age: 0
+
+]
+[2025-07-25 18:29:31,541: INFO: data_ingestion: Extracted zip file to: artifacts/data_ingestion/unzipped_data]
+[2025-07-25 18:29:31,556: INFO: main: >>>>>> stage Data_Ingestion_stage completed >>>>>>>
+
+x=========x]
+[2025-07-25 18:29:31,556: INFO: main: >>>>>> stage Data_Validation_Stage start<<<<<<]
+[2025-07-25 18:29:31,563: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 18:29:31,572: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 18:29:31,572: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 18:29:31,572: INFO: common: created directory at: artifacts]
+[2025-07-25 18:29:31,577: INFO: common: created directory at: artifacts/data_validation]
+[2025-07-25 18:29:31,577: INFO: data_validation:  Reading data from: artifacts/data_ingestion/unzipped_data\survey.csv]
+[2025-07-25 18:29:31,586: INFO: data_validation: Validation completed. Status: True]
+[2025-07-25 18:29:31,586: INFO: main: >>>>>> stage Data_Validation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-25 18:29:31,586: INFO: main: >>>>>> stage Data_Transformation_Stage start<<<<<<]
+[2025-07-25 18:29:31,590: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 18:29:31,598: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 18:29:31,599: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 18:29:31,599: INFO: common: created directory at: artifacts]
+[2025-07-25 18:29:31,696: INFO: main: >>>>>> stage Data_Transformation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-25 18:29:31,696: INFO: main: >>>>>> stage Model_Training_Stage start<<<<<<]
+[2025-07-25 18:29:31,703: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 18:29:31,710: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 18:29:31,717: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 18:29:31,717: INFO: common: created directory at: artifacts]
+[2025-07-25 18:29:31,717: INFO: common: created directory at: artifacts/model_trainer]
+[2025-07-25 18:29:37,958: INFO: main: >>>>>> stage Model_Training_Stage completed >>>>>>>
+
+x=======x]
+[2025-07-25 18:29:37,958: INFO: main: >>>>>> stage Model_Evaluation_Stage start<<<<<<]
+[2025-07-25 18:29:37,958: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-25 18:29:37,973: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-25 18:29:37,975: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-25 18:29:37,975: INFO: common: created directory at: artifacts]
+[2025-07-25 18:29:37,978: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-07-25 18:29:38,037: INFO: main: >>>>>> stage Model_Evaluation_Stage completed >>>>>>>
+
+x======x]
+[2025-07-25 18:35:59,016: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-25 18:35:59,016: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-25 18:35:59,023: INFO: _internal:  * Restarting with stat]
+[2025-07-25 18:36:00,196: WARNING: _internal:  * Debugger is active!]
+[2025-07-25 18:36:00,196: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-25 18:36:12,192: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:36:12] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:36:12,228: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:36:12] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 18:38:12,406: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:38:12] "GET / HTTP/1.1" 200 -]
+[2025-07-25 18:38:12,419: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:38:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:39:00,126: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:39:00] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:39:00,158: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:39:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:42:43,784: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:42:43] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:42:43,818: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:42:43] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 18:43:47,260: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:43:47] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:43:47,277: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:43:47] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 18:45:48,498: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:45:48] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:45:48,517: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:45:48] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 18:47:04,615: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:47:04] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:47:04,632: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:47:04] "GET /static/style.css HTTP/1.1" 200 -]
+[2025-07-25 18:48:15,654: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:48:15] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:48:15,670: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:48:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:49:17,398: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:49:17] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:49:17,418: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:49:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-25 18:51:11,733: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:51:11] "POST / HTTP/1.1" 200 -]
+[2025-07-25 18:51:11,747: INFO: _internal: 127.0.0.1 - - [25/Jul/2025 18:51:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
