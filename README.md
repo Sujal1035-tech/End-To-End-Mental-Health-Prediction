@@ -8,15 +8,16 @@ This repository contains an end-to-end machine learning pipeline designed to pre
 
 ```mermaid
 graph LR
-A[Data Ingestion] -->] B[Data Validation]
+A[Data Ingestion] --> B[Data Validation]
 B --> C[Data Transformation]
 C --> D[Model Training]
 D --> E[Model Evaluation]
 E --> F[Model Deployment]
-
+```
 
 ### 📁 Project Structure
 
+```mermaid
 End-To-End-Mental-Health-Prediction/
 │
 ├── config/
@@ -42,3 +43,4 @@ End-To-End-Mental-Health-Prediction/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
