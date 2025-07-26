@@ -1240,3 +1240,88 @@ x=======x]
 [2025-07-26 11:05:08,069: INFO: main: >>>>>> stage Model_Evaluation_Stage completed >>>>>>>
 
 x======x]
+[2025-07-26 11:06:28,072: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000]
+[2025-07-26 11:06:28,072: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-26 11:06:28,073: INFO: _internal:  * Restarting with stat]
+[2025-07-26 11:06:29,264: WARNING: _internal:  * Debugger is active!]
+[2025-07-26 11:06:29,264: INFO: _internal:  * Debugger PIN: 153-289-240]
+[2025-07-26 11:06:37,464: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 11:06:37] "GET / HTTP/1.1" 200 -]
+[2025-07-26 11:06:37,525: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 11:06:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-26 11:06:37,775: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 11:06:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-07-26 11:07:32,331: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 11:07:32] "POST / HTTP/1.1" 200 -]
+[2025-07-26 11:07:32,344: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 11:07:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -]
+[2025-07-26 11:56:36,626: INFO: main: >>>>>> stage Data_Ingestion_stage start<<<<<<]
+[2025-07-26 11:56:36,626: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-26 11:56:36,626: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-26 11:56:36,643: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-26 11:56:36,644: INFO: common: created directory at: artifacts]
+[2025-07-26 11:56:36,644: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-26 11:56:38,017: INFO: data_ingestion: artifacts/data_ingestion/survey.zip downloaded! Info: 
+Connection: close
+Content-Length: 47226
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f16fe3c88c22772a1f26f1fe8eb01d80693f7c860caa7ff40583a008e275e0e8"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8A06:1FAC3A:3CC2F:CCCA7:68846746
+Accept-Ranges: bytes
+Date: Sat, 26 Jul 2025 06:26:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom-vanm7210023-BOM
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1753511198.359764,VS0,VE234
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 42f095df6c6262e265a690299dc79ef96b8fae05
+Expires: Sat, 26 Jul 2025 06:31:38 GMT
+Source-Age: 0
+
+]
+[2025-07-26 11:56:38,017: INFO: data_ingestion: Extracted zip file to: artifacts/data_ingestion/unzipped_data]
+[2025-07-26 11:56:38,017: INFO: main: >>>>>> stage Data_Ingestion_stage completed >>>>>>>
+
+x=========x]
+[2025-07-26 11:56:38,023: INFO: main: >>>>>> stage Data_Validation_Stage start<<<<<<]
+[2025-07-26 11:56:38,024: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-26 11:56:38,029: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-26 11:56:38,033: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-26 11:56:38,033: INFO: common: created directory at: artifacts]
+[2025-07-26 11:56:38,033: INFO: common: created directory at: artifacts/data_validation]
+[2025-07-26 11:56:38,033: INFO: data_validation:  Reading data from: artifacts/data_ingestion/unzipped_data\survey.csv]
+[2025-07-26 11:56:38,043: INFO: data_validation: Validation completed. Status: True]
+[2025-07-26 11:56:38,043: INFO: main: >>>>>> stage Data_Validation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-26 11:56:38,044: INFO: main: >>>>>> stage Data_Transformation_Stage start<<<<<<]
+[2025-07-26 11:56:38,046: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-26 11:56:38,049: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-26 11:56:38,053: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-26 11:56:38,054: INFO: common: created directory at: artifacts]
+[2025-07-26 11:56:38,123: INFO: main: >>>>>> stage Data_Transformation_Stage completed >>>>>>>
+
+x=========x]
+[2025-07-26 11:56:38,123: INFO: main: >>>>>> stage Model_Training_Stage start<<<<<<]
+[2025-07-26 11:56:38,123: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-26 11:56:38,128: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-26 11:56:38,133: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-26 11:56:38,133: INFO: common: created directory at: artifacts]
+[2025-07-26 11:56:38,133: INFO: common: created directory at: artifacts/model_trainer]
+[2025-07-26 11:56:44,300: INFO: main: >>>>>> stage Model_Training_Stage completed >>>>>>>
+
+x=======x]
+[2025-07-26 11:56:44,300: INFO: main: >>>>>> stage Model_Evaluation_Stage start<<<<<<]
+[2025-07-26 11:56:44,303: INFO: common: yaml file: D:\end to end mental_health_prediction\config.yaml loaded successfully]
+[2025-07-26 11:56:44,308: INFO: common: yaml file: D:\end to end mental_health_prediction\params.yaml loaded successfully]
+[2025-07-26 11:56:44,313: INFO: common: yaml file: D:\end to end mental_health_prediction\schema.yaml loaded successfully]
+[2025-07-26 11:56:44,314: INFO: common: created directory at: artifacts]
+[2025-07-26 11:56:44,314: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-07-26 11:56:44,365: INFO: main: >>>>>> stage Model_Evaluation_Stage completed >>>>>>>
+
+x======x]

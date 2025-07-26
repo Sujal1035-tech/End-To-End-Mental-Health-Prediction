@@ -31,16 +31,14 @@ class DataTransformation:
         if 'work_interfere' in df.columns:
             df['work_interfere'] = df['work_interfere'].fillna('Do Not Know')
 
-        # Optional: log remaining nulls in those columns
         logging.info("🔍 Nulls after filling:\n" + str(df[['self_employed', 'work_interfere']].isnull().sum()))
-
         return df
 
     def clean_age(self, df):
         logging.info("🔢 Cleaning Age column")
         df = df.copy()
         df['Age'] = pd.to_numeric(df['Age'], errors='coerce')
-        df = df[(df['Age'] >= 10) & (df['Age'] <= 100)]
+        df = df[(df['Age'] >= 18) & (df['Age'] <= 100)]
         return df
 
     def normalize_gender(self, df):
@@ -48,15 +46,35 @@ class DataTransformation:
         df = df.copy()
         df['Gender'] = df['Gender'].astype(str).str.lower().str.strip()
 
-        def clean_gender(val):
-            if 'male' in val:
-                return 'male'
-            elif 'female' in val:
-                return 'female'
+        male_terms = [
+            'male', 'm', 'man', 'cis male', 'cis man', 'make', 'malr', 'msle', 'mail',
+            'guy (-ish) ^_^', 'male (cis)', 'male-ish', 'maile', 'mal',
+            'ostensibly male, unsure what that really means'
+        ]
+
+        female_terms = [
+            'female', 'f', 'cis female', 'woman', 'femail', 'femake', 'female (cis)',
+            'cis-female/femme', 'female (trans)', 'trans-female', 'woman'
+        ]
+
+        other_terms = [
+            'trans woman', 'male leaning androgynous', 'neuter', 'queer', 'enby',
+            'agender', 'something kinda male?', 'non-binary', 'queer/she/they',
+            'androgyne', 'fluid', 'genderqueer', 'nah'
+        ]
+
+        def clean_gender(gender):
+            if gender in male_terms:
+                return 'Male'
+            elif gender in female_terms:
+                return 'Female'
+            elif gender in other_terms:
+                return 'Other'
             else:
-                return 'other'
+                return 'Other'
 
         df['Gender'] = df['Gender'].apply(clean_gender)
+        logging.info("📊 Gender distribution after normalization:\n" + str(df['Gender'].value_counts()))
         return df
 
     def reduce_countries(self, df):
@@ -70,7 +88,6 @@ class DataTransformation:
         logging.info("🏷️ Encoding categorical columns")
         df = df.copy()
         le = LabelEncoder()
-
         cat_cols = df.select_dtypes(include='object').columns.tolist()
 
         for col in cat_cols:
@@ -92,11 +109,14 @@ class DataTransformation:
         scaler_dir = os.path.dirname(self.config.scaler_path)
         os.makedirs(scaler_dir, exist_ok=True)
         joblib.dump(scaler, self.config.scaler_path)
+
         return X_scaled
 
     def split_and_save(self, X, y):
         logging.info("✂️ Splitting data and saving")
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.2, random_state=42, stratify=y
+        )
 
         train = pd.DataFrame(X_train)
         train['treatment'] = y_train.reset_index(drop=True)
