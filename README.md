@@ -6,7 +6,8 @@ This project is an end-to-end machine learning pipeline built to predict mental 
 
 ## 🚀 Project Pipeline
 
-
+```mermaid
+graph LR
 A[Data Ingestion] --> B[Data Validation]
 B --> C[Data Transformation]
 C --> D[Model Training]
