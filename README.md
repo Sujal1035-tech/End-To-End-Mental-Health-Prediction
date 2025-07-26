@@ -14,22 +14,17 @@ C --> D[Model Training]
 D --> E[Model Evaluation]
 E --> F[Flask Deployment]
 
-End-To-End-Mental-Health-Prediction/
-│
-├── config/                    YAML files for configuration
-├── data/                      Raw and processed data
-├── notebooks/                 Jupyter notebooks for EDA and testing
-├── artifacts/                 Saved artifacts: model, transformer, scaler
-├── src/mlProject/             Core ML pipeline modules
-│   ├── components/            Data processing & training scripts
-│   ├── config/                Configuration entities
-│   ├── pipeline/              Pipeline stages
-│   └── utils/                 Utility functions
-├── templates/                 HTML templates for Flask
-├── static/                    CSS styling
-├── app.py                     Flask app
-├── main.py                    Main entry to trigger pipeline
-├── requirements.txt           Python dependencies
-├── README.md                  Project documentation
-└── setup.py                   Package info
-```
+## 🚀 Installation And How Run
+```bash
+# 1. Clone
+git clone https://github.com/Sujal1035-tech/End-To-End-Mental-Health-Prediction.git
+cd End-To-End-Mental-Health-Prediction
+
+# 2. Install deps
+pip install -r requirements.txt
+
+# 3. Run the full pipeline
+python main.py          # Trains & saves model + artifacts
+
+# 4. Launch the web app
+python app.py           # Open http://localhost:5000
