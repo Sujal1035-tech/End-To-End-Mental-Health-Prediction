@@ -14,9 +14,6 @@ C --> D[Model Training]
 D --> E[Model Evaluation]
 E --> F[Flask Deployment]
 
-## Project structure
-
-'''mwemaid
 End-To-End-Mental-Health-Prediction/
 │
 ├── config/                   # YAML files for configuration
