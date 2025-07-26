@@ -23,8 +23,18 @@ class DataTransformation:
         return df.drop(columns=cols_to_drop, errors='ignore')
 
     def fill_missing(self, df):
-        logging.info("🩹 Filling missing values")
-        return df.fillna(df.mode().iloc[0])
+        logging.info("🩹 Filling specific missing values")
+        df = df.copy()
+
+        if 'self_employed' in df.columns:
+            df['self_employed'] = df['self_employed'].fillna('No')
+        if 'work_interfere' in df.columns:
+            df['work_interfere'] = df['work_interfere'].fillna('Do Not Know')
+
+        # Optional: log remaining nulls in those columns
+        logging.info("🔍 Nulls after filling:\n" + str(df[['self_employed', 'work_interfere']].isnull().sum()))
+
+        return df
 
     def clean_age(self, df):
         logging.info("🔢 Cleaning Age column")
@@ -64,7 +74,6 @@ class DataTransformation:
         cat_cols = df.select_dtypes(include='object').columns.tolist()
 
         for col in cat_cols:
-            # Convert all to str to avoid 'str' & 'bool' mixed error
             df[col] = df[col].astype(str)
             df[col] = le.fit_transform(df[col])
         return df
@@ -80,7 +89,6 @@ class DataTransformation:
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 
-        # ✅ Ensure scaler path directory exists
         scaler_dir = os.path.dirname(self.config.scaler_path)
         os.makedirs(scaler_dir, exist_ok=True)
         joblib.dump(scaler, self.config.scaler_path)
@@ -88,14 +96,13 @@ class DataTransformation:
 
     def split_and_save(self, X, y):
         logging.info("✂️ Splitting data and saving")
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
         train = pd.DataFrame(X_train)
         train['treatment'] = y_train.reset_index(drop=True)
         test = pd.DataFrame(X_test)
         test['treatment'] = y_test.reset_index(drop=True)
 
-        # ✅ Ensure output directories exist
         os.makedirs(os.path.dirname(self.config.processed_train_data_path), exist_ok=True)
         os.makedirs(os.path.dirname(self.config.processed_test_data_path), exist_ok=True)
 
