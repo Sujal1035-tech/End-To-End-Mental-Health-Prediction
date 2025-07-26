@@ -13,7 +13,11 @@ B --> C[Data Transformation]
 C --> D[Model Training]
 D --> E[Model Evaluation]
 E --> F[Flask Deployment]
+```
 
+## 🗂️ Project Structure
+
+```mermaid
 End-To-End-Mental-Health-Prediction/
 │
 ├── config/                   # YAML files for configuration
@@ -32,3 +36,4 @@ End-To-End-Mental-Health-Prediction/
 ├── requirements.txt          # Python dependencies
 ├── README.md                 # Project documentation
 └── setup.py                  # Package info
+```
