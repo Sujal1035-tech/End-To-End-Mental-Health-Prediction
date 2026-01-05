@@ -1,10 +1,10 @@
-# 🧠 End-To-End Mental Health Prediction
+# End-To-End Mental Health Prediction
 
 A comprehensive machine learning pipeline that predicts whether a person may require mental health treatment based on survey responses. The project includes data processing, model training, evaluation, and deployment through a Flask web application.
 
 ---
 
-## ✨ Features
+## Features
 
 • **Complete ML Pipeline** - From data ingestion to deployment  
 • **Data Validation & Transformation** - Robust data processing components  
@@ -15,7 +15,7 @@ A comprehensive machine learning pipeline that predicts whether a person may req
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the repository
 ```bash
@@ -35,49 +35,47 @@ python app.py
 
 ---
 
-## 💻 Usage
+##  Usage
 
-### 🎯 Train the Model
+###  Train the Model
 ```bash
 python main.py
 ```
 
-### 🌐 Access Web Interface
+### Access Web Interface
 ```bash
 python app.py
 ```
-**➡️ Open `http://localhost:5000` in your browser**
-
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 End-To-End-Mental-Health-Prediction/
 │
-├── 📂 config/                 # Configuration files
-│   ├── ⚙️ config.yaml
-│   ├── 🔧 params.yaml
-│   └── 📋 schema.yaml
+├──  config/                 # Configuration files
+│   ├──  config.yaml
+│   ├──  params.yaml
+│   └──  schema.yaml
 │
-├── 📦 artifacts/              # Generated model artifacts
+├──  artifacts/              # Generated model artifacts
 │
-├── 🔍 src/mlProject/         # Source code
-│   ├── 🧩 components/        # Pipeline components
-│   ├── 🔄 pipeline/          # Training pipelines
-│   ├── 🛠️ utils/             # Utility functions
-│   └── ⚙️ config/            # Configuration management
+├── src/mlProject/         # Source code
+│   ├──  components/        # Pipeline components
+│   ├──  pipeline/          # Training pipelines
+│   ├──  utils/             # Utility functions
+│   └──  config/            # Configuration management
 │
-├── 🎨 templates/             # HTML templates
-├── 📄 static/                # CSS and static files
-├── 🖥️ app.py                 # Flask web application
-├── 🚂 main.py                # Training pipeline
-└── 📜 requirements.txt       # Dependencies
+├──  templates/             # HTML templates
+├──  static/                # CSS and static files
+├──  app.py                 # Flask web application
+├──  main.py                # Training pipeline
+└──  requirements.txt       # Dependencies
 ```
 
 ---
 
-## 🔄 Pipeline Components
+## Pipeline Components
 
 | **Stage** | **Description** |
 |-----------|-----------------|
@@ -90,28 +88,13 @@ End-To-End-Mental-Health-Prediction/
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 | **File** | **Purpose** |
 |----------|-------------|
-| 📝 `config.yaml` | Data sources and pipeline settings |
-| 🎛️ `params.yaml` | Model hyperparameters |
-| ✅ `schema.yaml` | Data validation rules |
-
----
-
-## 🌐 Web Application
-
-The Flask app provides:
-
-• **📝 Interactive Survey Form** - User-friendly mental health assessment  
-• **⚡ Real-Time Predictions** - Instant results with confidence scores  
-• **📚 Educational Resources** - Helpful information and guidance  
-• **🎨 Responsive Design** - Works on desktop and mobile devices  
-
-
-
----
+|  `config.yaml` | Data sources and pipeline settings |
+|  `params.yaml` | Model hyperparameters |
+|  `schema.yaml` | Data validation rules |
 
 ## 🤖 Model Performance
 
@@ -119,32 +102,32 @@ The project implements and compares multiple algorithms:
 
 | **Algorithm** | **Type** |
 |---------------|----------|
-| 📈 **Logistic Regression** | Linear Classifier |
-| 🔍 **K-Nearest Neighbors** | Instance-based |
-| 🌳 **Decision Tree** | Tree-based |
-| 🌲 **Random Forest** | Ensemble Method |
-| 🎯 **Support Vector Machine** | Kernel-based |
-| 📊 **Naive Bayes** | Probabilistic |
-| 🚀 **XGBoost** | Gradient Boosting |
-| 🐱 **CatBoost** | Gradient Boosting |
-| 💡 **LightGBM** | Gradient Boosting |
+|  **Logistic Regression** | Linear Classifier |
+|  **K-Nearest Neighbors** | Instance-based |
+|  **Decision Tree** | Tree-based |
+|  **Random Forest** | Ensemble Method |
+|  **Support Vector Machine** | Kernel-based |
+|  **Naive Bayes** | Probabilistic |
+|  **XGBoost** | Gradient Boosting |
+|  **CatBoost** | Gradient Boosting |
+|  **LightGBM** | Gradient Boosting |
 
-### 📈 Best Model Results
+###  Best Model Results
 
-**🏆 Best Performing Model: Random Forest Classifier**
+** Best Performing Model: Random Forest Classifier**
 
 **Model Performance:**
 
 | **Metric** | **Score** |
 |------------|-----------|
-| 🎯 **Accuracy** | 84.86% |
-| 📊 **F1-Score** | 85.71% |
-| ✅ **Precision (Yes)** | 82.01% |
-| 🔍 **Recall (Yes)** | 89.76% |
-| ✅ **Precision (No)** | 88.39% |
-| 🔍 **Recall (No)** | 79.84% |
+|  **Accuracy** | 84.86% |
+|  **F1-Score** | 85.71% |
+|  **Precision (Yes)** | 82.01% |
+|  **Recall (Yes)** | 89.76% |
+|  **Precision (No)** | 88.39% |
+|  **Recall (No)** | 79.84% |
 
-### 📋 Detailed Classification Report
+###  Detailed Classification Report
 
 ```
                 precision    recall   f1-score   support
@@ -156,37 +139,31 @@ The project implements and compares multiple algorithms:
  weighted avg       0.85      0.85      0.85       251
 ```
 
-📊 **All performance metrics are generated during training and stored in the artifacts directory.**
+ **All performance metrics are generated during training and stored in the artifacts directory.**
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Here's how:
 
-1. **🍴 Fork** the repository
-2. **🌿 Create** a feature branch
-3. **✨ Make** your changes
-4. **📤 Submit** a pull request
+1. ** Fork** the repository
+2. ** Create** a feature branch
+3. ** Make** your changes
+4. ** Submit** a pull request
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## 📞 Contact
+##  Contact
 
-**👨‍💻 Sujal** - [GitHub Profile](https://github.com/Sujal1035-tech)
+** Sujal** - [GitHub Profile](https://github.com/Sujal1035-tech)
 
----
-
-## ⚠️ Important Disclaimer
-
-**This tool is for educational purposes only and should not replace professional medical advice.**
-
----
 
 ⭐ **If you find this project helpful, please give it a star!** ⭐
+
